@@ -58,9 +58,15 @@ body{
     font-size: 45px;
     font-family:cursive;
     color:rgb(212, 188, 108);
+    margin-bottom: 30px;
 }
 
 .chunk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 50%;
     border: 5px solid orange;
     border-radius: 20px;
@@ -71,4 +77,6 @@ body{
     font-size: 30px;
     font-style:oblique;
 }
+
+
 

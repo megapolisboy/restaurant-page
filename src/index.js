@@ -13,3 +13,5 @@ const contactButton = document.querySelector('#contact-button');
 homeButton.addEventListener('click', showHomePage);
 menuButton.addEventListener('click', showMenuPage);
 contactButton.addEventListener('click', showContactPage);
+
+// Background picture by Hemant Latawa

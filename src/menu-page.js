@@ -9,6 +9,43 @@ function showMenuPage(e){
     page.textContent = '';
     //creating menu items
     let margherita = document.createElement('div');
+    let fourSeasons = document.createElement('div');
+    let carbonara = document.createElement('div');
+    let quatroFormaggi = document.createElement('div');
+    let hawaiian = document.createElement('div');
+    let pizzas = [margherita, fourSeasons, carbonara, quatroFormaggi, hawaiian];
+    pizzas.forEach(pizza => pizza.classList.add('chunk'));
+    /*
+        <div class='chunk'>
+            <h1>Margherita</h1>
+            <img src="./margherita.jpg">
+            <h2>35$</h2>
+        </div>
+    */
+    let title = document.createElement('h1');
+    let img = document.createElement('img');
+    let price = document.createElement('h2');
+
+    createPizza(margherita, 'Margherita', '35$');
+    createPizza(fourSeasons, 'Four Seasons', '50$');
+    createPizza(carbonara, 'Carbonara', '45$');
+    createPizza(quatroFormaggi, 'Quatro Formaggi', '55$');
+    createPizza(hawaiian, 'Hawaiian', '60$');
+
+
+    // TODO: add headers
+    // TODO: add photos
+    // TODO: add price
+    pizzas.forEach(pizza => page.appendChild(pizza));
+}
+
+function createPizza(pizza, title, price){
+    let titleElement = document.createElement('h1');
+    let priceElement = document.createElement('h2');
+    titleElement.textContent = title;
+    priceElement.textContent = price;
+    pizza.appendChild(titleElement);
+    pizza.appendChild(priceElement);
 }
 
 export default showMenuPage;
