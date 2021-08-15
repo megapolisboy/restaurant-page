@@ -33,10 +33,6 @@ function showMenuPage(e){
     createPizza(quatroFormaggi, 'Quatro Formaggi', '55$');
     createPizza(hawaiian, 'Hawaiian', '60$');
 
-
-    // TODO: add headers
-    // TODO: add photos
-    // TODO: add price
     pizzas.forEach(pizza => page.appendChild(pizza));
 }
 
