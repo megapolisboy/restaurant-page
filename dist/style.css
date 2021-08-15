@@ -23,12 +23,13 @@ body{
 }
 
 .page-button{
+    position: relative;
     height: 60px;
     width: 120px;
     margin-left: 100px;
     margin-right: 100px;
     font-size: 25px;
-    margin-top: 10px;
+    top: 10px;
     border: 3px solid rgb(185, 111, 13);
     background-color: rgb(71, 13, 13);
     color:rgb(243, 208, 91);
@@ -40,8 +41,20 @@ body{
 }
 
 .page-button:hover{
-    background-color: rgb(167, 64, 24);
-    margin-top: 0px;
+    animation-duration: 1s;
+    animation-name: page-button-hover;
+    animation-fill-mode:forwards;
+}
+
+@keyframes page-button-hover{
+    from {
+
+    }
+
+    to {
+        background-color: rgb(167, 64, 24);
+        top: 0px;
+    }
 }
 
 .page{
@@ -78,5 +91,23 @@ body{
     font-style:oblique;
 }
 
+.pizza:hover{
+    cursor: pointer;
+    animation-duration: 1s;
+    animation-name: pizzahover;
+    animation-fill-mode: forwards;
+}
 
+@keyframes pizzahover{
+    from {
+
+    }
+
+    to {
+        background-color: rgba(228, 231, 64, 0.5);
+        color:rgb(167, 64, 24);
+        scale: 110%;
+        margin: 30px;
+    }
+}
 

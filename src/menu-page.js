@@ -15,6 +15,7 @@ function showMenuPage(e){
     let hawaiian = document.createElement('div');
     let pizzas = [margherita, fourSeasons, carbonara, quatroFormaggi, hawaiian];
     pizzas.forEach(pizza => pizza.classList.add('chunk'));
+    pizzas.forEach(pizza => pizza.classList.add('pizza'));
     /*
         <div class='chunk'>
             <h1>Margherita</h1>
